@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <p>{{ msg }}</p>
-  </div>
+  <input :value="value">
 </template>
 
 <script lang="ts">
@@ -12,7 +10,7 @@ import { Options, Vue } from 'vue-class-component';
     msg: String
   }
 })
-export default class HelloWorld extends Vue {
-  msg!: string
+export default class Input extends Vue {
+  value!: string
 }
 </script>
